@@ -11,14 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150503020205) do
+ActiveRecord::Schema.define(version: 20150519074742) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
-    t.boolean  "editing"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "published",       default: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "category",        default: ""
+    t.boolean  "life_option",     default: false
+    t.boolean  "study_option",    default: false
+    t.boolean  "computer_option", default: false
   end
 
 end

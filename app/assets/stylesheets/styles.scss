@@ -6,6 +6,11 @@
   border-radius: 0 0 5px 5px;
 }
 
+.with_label {
+  display:inline;
+  margin-right: 1.5em;
+}
+
 .radio-group {
   border:1px solid #ccc;
   border-radius:4px;
@@ -16,6 +21,20 @@
     &:first-child {
       margin-right:1.5em;
     }
+  }
+}
+
+.multi-select {
+  border: 1px solid #cccccc !important;
+  border-radius:5px;
+  padding: .5em 1em;
+  background-color: #ffffff;
+  margin-bottom:1.5em;
+  .form-group { display: inline;}
+  input { margin-top:4px;}
+  .checkbox {
+    display: inline !important;
+    margin-right: 1em;
   }
 }
 
